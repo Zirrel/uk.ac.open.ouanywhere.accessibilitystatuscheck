@@ -1,2 +1,2 @@
-uk.ac.open.ouanywhere.accessibilitystatuscheck
-==============================================
+ou-plugin-test
+==============

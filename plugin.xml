@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    id="uk.ac.open.ouanywhere.accessibilitystatuscheck" version="1.0.0">
+    <name>AccessibilityStatusCheck</name>
+    <description>AccessibilityStatusCheck Plugin</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova,accessibilitystatuscheck</keywords>
+    <js-module src="www/accessibilitystatuscheck.js" name="accessibilitystatuscheck">
+        <clobbers target="accessibilitystatuscheck" />
+    </js-module>
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="AccessibilityStatusCheck">
+                <param name="ios-package" value="CDVAccessibilityStatus"/>
+            </feature>
+        </config-file>
+        <header-file src="src/ios/CDVAccessibilityStatus.h" />
+        <source-file src="src/ios/CDVAccessibilityStatus.m" />
+    </platform>
+</plugin>
