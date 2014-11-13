@@ -5,8 +5,8 @@
     <description>AccessibilityStatusCheck Plugin</description>
     <license>Apache 2.0</license>
     <keywords>cordova,accessibilitystatuscheck</keywords>
-    <js-module src="www/accessibilitystatuscheck.js" name="accessibilitystatuscheck">
-        <clobbers target="accessibilitystatuscheck" />
+    <js-module src="www/accessibilitystatuscheck.js" name="AccessibilityStatusCheck">
+        <clobbers target="AccessibilityStatusCheck" />
     </js-module>
     <platform name="ios">
         <config-file target="config.xml" parent="/*">
