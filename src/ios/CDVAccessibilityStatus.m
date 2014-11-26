@@ -10,6 +10,14 @@
     NSString *callbackID;
 }
 
+-(void)test:(CDVInvokedUrlCommand *)command {
+    callbackID = command.callbackId;
+    
+    pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:@"AccessibilityStatusCheck"];
+    
+    [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
+}
+
 -(void)registerAccessibilityStatusUpdate:(CDVInvokedUrlCommand *)command {
     callbackID = command.callbackId;
     

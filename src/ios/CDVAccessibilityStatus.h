@@ -8,5 +8,6 @@
 @interface CDVAccessibilityStatus : CDVPlugin
 
 -(void)registerAccessibilityStatusUpdate:(CDVInvokedUrlCommand *)command;
+-(void)test:(CDVInvokedUrlCommand *)command;
 
 @end
