@@ -18,10 +18,11 @@
         <source-file src="src/ios/CDVAccessibilityStatus.m" />
     </platform>
     <platform name="android">
-        <config-file target="config.xml" parent="/*">
+        <config-file target="res/xml/config.xml" parent="/*">
             <feature name="AccessibilityStatusCheck">
                 <param name="android-package" value="uk.ac.open.ouanywhere.accessibilitystatuscheck"/>
             </feature>
         </config-file>
+        <source-file src="src/android/AccessibilityStatusCheck.java" target-dir="src/uk/ac/open/ouanywhere/accessibilitystatuscheck" />
     </platform>
 </plugin>
